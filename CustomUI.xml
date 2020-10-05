@@ -1,0 +1,11 @@
+ <customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui"> 
+   <ribbon> 
+     <tabs> 
+       <tab id="CustomTab" label="My Tab"> 
+         <group id="SampleGroup" label="Size"> 
+           <button id="Button" label="Make It Same Size" size="large" imageMso="SizeToControlHeightAndWidth" onAction="ResizeAllShapes" /> 
+         </group > 
+       </tab> 
+     </tabs> 
+   </ribbon> 
+ </customUI> 
