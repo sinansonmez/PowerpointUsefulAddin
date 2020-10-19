@@ -4,6 +4,8 @@
        <tab id="CustomTab" label="My Tab"> 
          <group id="SampleGroup" label="Size"> 
            <button id="Button" label="Make It Same Size" size="large" imageMso="SizeToControlHeightAndWidth" onAction="ResizeAllShapes" /> 
+	          <button id="ButtonHeight" label="Make It Same Height" size="large" imageMso="SizeToControlHeight" onAction="MakeItSameHeight" /> 
+	          <button id="ButtonWidth" label="Make It Same Width" size="large" imageMso="SizeToControlWidth" onAction="MakeItSameWidth" /> 
          </group > 
        </tab> 
      </tabs> 
