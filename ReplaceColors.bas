@@ -1,5 +1,5 @@
 ' function asks user to provide to RGB color
-" first one is the old color to be replaced and second one is the new color to be used
+' first one is the old color to be replaced and second one is the new color to be used
 Sub ReplaceColors()
     Dim lFindColor As Long
     Dim lReplaceColor As Long
