@@ -1,13 +1,30 @@
- <customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui"> 
-   <ribbon> 
-     <tabs> 
-       <tab id="CustomTab" label="My Tab"> 
-         <group id="SampleGroup" label="Size"> 
-           <button id="Button" label="Make It Same Size" size="large" imageMso="SizeToControlHeightAndWidth" onAction="ResizeAllShapes" /> 
-	   <button id="ButtonHeight" label="Make It Same Height" size="large" imageMso="SizeToControlHeight" onAction="MakeItSameHeight" /> 
-	   <button id="ButtonWidth" label="Make It Same Width" size="large" imageMso="SizeToControlWidth" onAction="MakeItSameWidth" /> 
-         </group > 
-       </tab> 
-     </tabs> 
-   </ribbon> 
- </customUI> 
+<?xml version="1.0" encoding="UTF-8"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui">
+   <ribbon>
+      <tabs>
+         <tab id="CustomTab" label="My Tab">
+            <group id="SizeGroup" label="Size">
+               <button id="Button" label="Make It Same Size" size="large" imageMso="SizeToControlHeightAndWidth" onAction="ResizeAllShapes" screentip="Make It Same Size" supertip="Make the height and width of all selected shapes based on the first selected shape's dimensions. You need to select at least two shapes." />
+               <button id="ButtonHeight" label="Make It Same Height" size="large" imageMso="SizeToControlHeight" onAction="MakeItSameHeight" screentip="Make It Same Height" supertip="Make the height of all selected shapes based on the first selected shape's height. You need to select at least two shapes." />
+               <button id="ButtonWidth" label="Make It Same Width" size="large" imageMso="SizeToControlWidth" onAction="MakeItSameWidth" screentip="Make It Same Width" supertip="Make the width of all selected shapes based on the first selected shape's width. You need to select at least two shapes." />
+            </group>
+            <group id="LocationGroup" label="Location">
+               <button id="ButtonMoveNext" label="Move Left" size="large" imageMso="FillLeft" onAction="MoveShapeNextToSelectedShape" screentip="Move Left" supertip="Move the second selected shape next to first selected shape. You need to select two shapes." />
+               <button id="ButtonMoveButton" label="Move Bottom" size="large" imageMso="FillUp" onAction="MoveShapeBottomOfSelectedShape" screentip="Move Bottom" supertip="Move the second selected shape to bottom of first selected shape. You need to select two shapes." />
+               <button id="ButtonSwap" label="Swap Shapes" size="large" imageMso="DiagramChangeToCycleClassic" onAction="SwapShapes" screentip="Swap Shapes" supertip="Swap the locations of two shapes. You need to select two shapes." />
+            </group>
+            <group id="FormatGroup" label="Format">
+               <button id="ButtonColor" label="Make It Same Color" size="large" imageMso="AppointmentColorDialog" onAction="MakeItSameColor" screentip="Make It Same Color" supertip="Make the fill color of all selected shapes based on first selected shape's color. You need to select at least two shapes." />
+               <button id="ButtonReplaceColors" label="Replace 2 Colors" size="large" imageMso="FontColorMoreColorsDialog" onAction="ReplaceColors" screentip="Replace two colors entered by user" />
+               <button id="ButtonShapesUnGroupAll" label="Ungroup All Groups" size="large" imageMso="ObjectsUngroup" onAction="ShapesUnGroupAll" screentip="Ungroup all grouped shapes in the presentation" />
+            </group>
+            <group id="CheckGroup" label="Check">
+               <button id="ButtonProofLanguageEnglish" label="Spell Check All Slides in English" size="large" imageMso="SetLanguage" onAction="ChangeProofingLanguageToEnglish" screentip="Spell Check in English" supertip="Spell checking for entire document by setting proof language to UK English" />
+               <button id="ButtonFindAllColors" label="Find All Colors" size="large" imageMso="ThemeColorsGallery" onAction="FindAllColors" screentip="Find all colors on a new slide at the end of the document" />
+               <button id="ButtonFindTextSmallerThan12" label="Find Texts Smaller Than 12" size="large" imageMso="FontSizeDecreaseWord" onAction="FindTextSmallerThan12" screentip="Find all texts with font size smaller than 12" />
+               <button id="ButtonFindDifferentFont" label="Find Fonts Used Other Than Arial" size="large" imageMso="FormatCellsFontDialog" onAction="FindDifferentFont" screentip="Find all texts with font other than Arial" />
+            </group>
+         </tab>
+      </tabs>
+   </ribbon>
+</customUI>
