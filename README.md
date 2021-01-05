@@ -16,3 +16,6 @@ Powerpoint Addin (written VBA Macro) with three useful functions
 - TBD
   
 Create an issue for new features, I will try to make it for you
+
+# Disclaimer
+Please always save your powerpoint before using any of these functionality. I do not accept any responsibility and will not be liable for any data loss.
