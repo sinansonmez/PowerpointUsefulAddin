@@ -1,9 +1,4 @@
 Sub MakeItSameHeight()
-' Copies the property of the first selected chart / shape to the second
-
-' No variables are saved into the memory
-
-' IMPORTANT: YOU NEED TO SELECT THE SHAPES IN ORDER
 
 Dim shp1, oSh As shape
 
