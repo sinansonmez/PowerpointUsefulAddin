@@ -13,7 +13,7 @@ Powerpoint Addin (written VBA Macro) with three useful functions
 - replace selected color in current all slides in the presentation
 
 # TODO
-- TBD
+- Create an add-in which includes all the functionalities above
   
 Create an issue for new features, I will try to make it for you
 
